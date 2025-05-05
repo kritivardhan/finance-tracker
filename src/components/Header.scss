@@ -1,0 +1,17 @@
+/* src/components/layout/Header.scss */
+
+.header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+  

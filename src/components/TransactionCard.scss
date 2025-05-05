@@ -1,0 +1,30 @@
+.transaction-card {
+    background-color: #fff;
+    border-left: 5px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  
+    &.income {
+      border-left-color: #198754; // Bootstrap green
+    }
+  
+    &.expense {
+      border-left-color: #dc3545; // Bootstrap red
+    }
+  
+    &:hover {
+      transform: translateY(-3px);
+    }
+  
+    h5 {
+      font-weight: 600;
+    }
+  
+    p {
+      margin: 0.25rem 0;
+    }
+  }
+  

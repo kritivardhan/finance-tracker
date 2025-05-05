@@ -1,0 +1,88 @@
+// src/components/Sidebar.scss
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 220px;
+    background-color: #343a40;
+    color: #fff;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  
+    &.collapsed {
+      width: 70px;
+  
+      .link-text {
+        display: none;
+      }
+  
+      .logo {
+        font-size: 1.2rem;
+      }
+    }
+  
+    .top-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #23272b;
+  
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #f8f9fa;
+      }
+  
+      .toggle-btn {
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+  
+      .link {
+        display: flex;
+        align-items: center;
+        padding: 0.75rem;
+        margin: 0.25rem 0;
+        color: #ccc;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background 0.2s ease;
+  
+        svg {
+          margin-right: 1rem;
+        }
+  
+        &:hover,
+        &.active {
+          background-color: #495057;
+          color: #fff;
+        }
+  
+        &.logout-btn {
+          background: none;
+          border: none;
+          color: #ccc;
+          text-align: left;
+          cursor: pointer;
+          width: 100%;
+  
+          &:hover {
+            background-color: #dc3545;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  

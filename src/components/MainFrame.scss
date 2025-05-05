@@ -1,0 +1,25 @@
+/* src/components/layout/MainFrame.scss */
+
+.main-frame {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+
+  .main-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px; // matches sidebar width
+    transition: margin-left 0.3s ease;
+
+    main {
+      flex: 1;
+      padding: 1rem;
+      background-color: #ffffff;
+    }
+  }
+
+  .sidebar.collapsed + .main-area {
+    margin-left: 70px;
+  }
+}
