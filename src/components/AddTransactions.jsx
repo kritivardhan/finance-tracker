@@ -18,7 +18,7 @@ const AddTransaction = ({ onClose, onTransactionAdded }) => {
       return;
     }
 
-    const transactionData = { title, date, amount, category, type, date };
+    const transactionData = { title, amount, category, type, date };
 
     const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/transactions`, {
       method: 'POST',
