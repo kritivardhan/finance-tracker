@@ -61,5 +61,5 @@ jobs:
         with:
           app-name: 'KVR-finance-tracker'
           slot-name: 'Production'
-          package: .
+          package: dist
           
